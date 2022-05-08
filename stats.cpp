@@ -16,8 +16,8 @@ Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
        st.min=NAN;
     }
     
-    st.Max=*max_element(data.begin(),data.end());
-    st.Min=*min_element(data.begin(),data.end());
+    st.max=*max_element(data.begin(),data.end());
+    st.min=*min_element(data.begin(),data.end());
     T sum=accumulate(data.begin(), data.end() , 0);
     st.Average=(sum/data.size());
     return st;
