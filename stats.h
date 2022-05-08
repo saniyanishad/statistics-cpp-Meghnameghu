@@ -8,18 +8,18 @@ using namespace std;
     namespace Statistics
 {
     
-	template <typename T=double>
+	template <typename M=double>
 	class Stats
    	 {
 	   public:
-		T Average;
-		T Max;
-		T Min;
+		M Average;
+		M Max;
+		M Min;
 		Stats();
 		//Stats(float avg,float max,float min);
-		Stats(T average,T Max,T Min);
+		Stats(M average,M Max,M Min);
 	};
 	template<typename T=double>
-	Stats<T> ComputeStatistics(const std::vector<T>& );
+	Stats<M> ComputeStatistics(const std::vector<M>& );
     
 }
