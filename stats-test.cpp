@@ -36,4 +36,5 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 
     REQUIRE(emailAlert.emailSent);
     REQUIRE(ledAlert.ledGlows);
+    REQUIRE(maxThreshold,alertrers);
 }
