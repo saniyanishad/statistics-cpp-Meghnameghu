@@ -3,21 +3,21 @@
 #include<cmath>
 #include<bits/stdc++.h>
 //Stats Statistics::Computedstatistics(const std::vector<___>&
-template<typename T> Statistics::Stats<T> Statistics::ComputeStatistics(const std::vector<T>& data);
+template<typename T> Statistics::Stats<T> Statistics::ComputeStatistics(const std::vector<T>& data)
  
-    Stats<T> st;
+    Stats<T> std;
      if(data.size()==0)
     {
-       st.Average=NAN;
-       st.Max=NAN;
-       st.Min=NAN;
+       std.Average=NAN;
+       std.Max=NAN;
+       std.Min=NAN;
     }
     
-    st.Max=*max_element(data.begin(),data.end());
-    st.Min=*min_element(data.begin(),data.end());
+    std.Max=*max_element(data.begin(),data.end());
+    std.Min=*min_element(data.begin(),data.end());
     T sum=accumulate(data.begin(), data.end() , 0);
-    st.Average=(sum/data.size());
-    return st;
+    std.Average=(sum/data.size());
+    return std;
   }
     
 
