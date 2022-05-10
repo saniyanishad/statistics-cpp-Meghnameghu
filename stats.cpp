@@ -1,5 +1,5 @@
 #include "stats.h"
-
+#include "vector"
 #include<cmath>
 #include<bits/stdc++.h>
 //Stats Statistics::Computedstatistics(const std::vector<___>&
